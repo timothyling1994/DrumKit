@@ -3,21 +3,33 @@
 	<head>
 		<title>Drumkit</title>
 		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="drumkit.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	
 	<body>
+		
+		<div id ="title">Drumkit.</div>
 		<div id="container">
-			
-				<div id="key-a" class="keys">A<br>Snare</div>
-				<div id="key-s" class="keys">S<br>Hi Hat</div>
-				<div id="key-d" class="keys">D<br>Cymbal</div>
-				<div id="key-f" class="keys">F<br>Kick</div>
-				<div id="key-g" class="keys">G<br>808</div>
-				<div id="key-h" class="keys">H<br>Perc</div>
-				<div id="key-j" class="keys">J<br>Clap</div>
-				<div id="key-k" class="keys">K<br>Chant</div>
+
+
+					<div data-key="65" id="key-a" class="keys"><kbd>A</kbd><br>Snare</div>
+					<div data-key="83" id="key-s" class="keys"><kbd>S</kbd><br>Hi Hat</div>
+					<div data-key="68" id="key-d" class="keys"><kbd>D</kbd><br>Crash</div>
+					<div data-key="70" id="key-f" class="keys"><kbd>F</kbd><br>Kick</div>
+					<div data-key="71" id="key-g" class="keys"><kbd>G</kbd><br>808</div>
+					<div data-key="72" id="key-h" class="keys"><kbd>H</kbd><br>Perc</div>
+					<div data-key="74" id="key-j" class="keys"><kbd>J</kbd><br>Clap</div>
+					<div data-key="75" id="key-k" class="keys"><kbd>K</kbd><br>Chant</div>
 			
 		</div>
+		<audio data-key="65" src="sounds/snare.wav"></audio>
+		<audio data-key="83" src="sounds/hihat.wav"></audio>
+		<audio data-key="68" src="sounds/crash.wav"></audio>
+		<audio data-key="70" src="sounds/kick.wav"></audio>
+		<audio data-key="71" src="sounds/808.wav"></audio>
+		<audio data-key="72" src="sounds/perc.wav"></audio>
+		<audio data-key="74" src="sounds/clap.wav"></audio>
+		<audio data-key="75" src="sounds/chant.wav"></audio>
 	</body>
 </html>

@@ -1,38 +1,57 @@
 html{
-	margin:0;
-	min-height:100%;
+
+	height:100%;
 	background-image: url('/Users/timothyling/Desktop/OdinProject/drumkit/crowd2.jpeg');
 	background-size:cover;
+	font-family:"courier";
 }
 
-body{
-
+html,body{
+	margin:0;
 }
 
 #container {
-
 
 	display:flex;
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
-	background-color: pink;
+	flex-wrap:wrap;
+	min-height:100vh;
+	
+}
+
+.playing {
+
+	transform:scale(1.1);
+	border-color:#ffff64;
 
 }
 
-#keys-wrapper{
+#title{
+
+	width:100%;
+	font-size:50px;
+	color:#ffff64;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
 
 }
 
 .keys {
 
-	border: 4px solid black;
+	border: 4px solid #ffff64;
 	border-radius:5px;
 	margin:1rem;
 	width:100px;
 	font-size:1.5rem;
 	padding:1rem .5rem;
-	background-color: white;
+	background: rgba(0,0,0,0.9);
 	text-align: center;
+	color:#ffff64;
+	transition:all 0.07s;
 
 }
+
