@@ -8,8 +8,11 @@ function removeTransition(e){
 function theDomHasLoaded(e) {
 
 	const keys = document.querySelectorAll('.keys');
-	console.log(keys);
-	keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+	keys.forEach(key => {
+		key.addEventListener('transitionend',removeTransition)
+		
+	});
+
 }
 
 window.addEventListener('keydown',function(e){
@@ -21,7 +24,7 @@ window.addEventListener('keydown',function(e){
 	audio.play();
 
 
-	key.classList.add('playing');
+	key.classList.toggle('playing');
 });
 
 document.addEventListener("DOMContentLoaded",theDomHasLoaded,false);
