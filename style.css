@@ -1,12 +1,13 @@
 html{
 
 	height:100%;
-	background-image: url('/Users/timothyling/Desktop/OdinProject/drumkit/crowd2.jpeg');
+	background-image: url('assets/crowd2.jpeg');
 	background-size:cover;
 	font-family:"courier";
 }
 
 html,body{
+
 	margin:0;
 }
 
