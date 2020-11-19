@@ -1,6 +1,6 @@
 html{
 
-	height:100%;
+	min-height:100%;
 	background-image: url('assets/crowd2.jpeg');
 	background-size:cover;
 	font-family:"courier";
@@ -13,12 +13,12 @@ html,body{
 
 #container {
 
+	margin-top:20vh;
 	display:flex;
 	flex-direction:row;
 	justify-content:center;
 	align-items:center;
 	flex-wrap:wrap;
-	min-height:100vh;
 	
 }
 
@@ -29,8 +29,9 @@ html,body{
 
 }
 
-#title{
+a{
 
+	margin-top:10vh;
 	width:100%;
 	font-size:50px;
 	color:#ffff64;
@@ -54,5 +55,30 @@ html,body{
 	color:#ffff64;
 	transition:all 0.07s;
 
+}
+
+@media only screen and (max-width: 812px) {
+
+  #container{
+  	margin:10vh;
+  }
+  a{
+  	margin-top:5vh;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .keys {
+  	width:50px;
+  	font-size:0.75rem;
+  }
+  #container{
+  	margin:5vh;
+  }
+  img{
+  	width:auto;
+  	height:100%;
+  	max-height: 20vh;
+  }
 }
 
