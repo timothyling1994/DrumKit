@@ -67,6 +67,22 @@ a{
   }
 }
 
+@media only screen and (max-width: 482px) {
+
+  .keys {
+  	width:50px;
+  	font-size:0.75rem;
+  }
+  #container{
+  	margin:5vh;
+  }
+  img{
+  	width:100%;
+  	height:auto;
+  	max-height: 20vh;
+  }
+}
+
 @media only screen and (max-height: 750px) {
   .keys {
   	width:50px;
